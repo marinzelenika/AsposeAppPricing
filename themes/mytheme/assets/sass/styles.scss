@@ -1,8 +1,8 @@
 .jumbotron {
     padding: 4rem 2rem;
     margin-bottom: 1rem;
-    background: white
     
+
 }
 .display-4{
     color: black;
@@ -16,7 +16,9 @@
     font-family: 'Open Sans';
 }
 
-
+.nav-link{
+    color: #09ce40 !important;
+}
 
 .demo
 {
@@ -26,12 +28,33 @@
 {
 	margin-bottom: 50px;
 }
+.border-image-clip-path{
+    border: 2px solid #09ce40;
+}
+/* .border-image-clip-path {
+    margin: auto;
+    border: 4px solid;
+    border-image: linear-gradient(45deg, #09ce40, green) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rorate(360deg);
+    }
+} */
 
 .pricingTable{
     border: 2px solid #e3e3e3;
     text-align: center;
     position: relative;
     padding-bottom: 40px;
+    margin-bottom: 60px;
     transform: translateZ(0px);
 }
 
@@ -70,8 +93,8 @@
 }
 
 .pricingTable .pricingTable-header{
-    background: #09ce40;
-    color: #fff;
+    background: white;
+    color: black;
     margin: -2px -2px 35px;
     padding: 40px 0;
 }
@@ -183,288 +206,3 @@
     .pricingTable{ margin-bottom: 25px; }
 }
 
-
-
-
- .cd-header{
-    --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    
-    height: 72px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-}
-header{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
-
-.cd-container{
-    --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-    max-width: 1440px;
-    width: 100%;
-    padding: 0;
-}
-.cd-header--inner{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-.cd-header--menu{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: #000 !important;
-    vertical-align: middle;
-    border-style: none;
-    display: none;
-}
-.cd-header--logo{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: #000 !important;
-    vertical-align: middle;
-    border-style: none;
-    height: 24px;
-}
-.cd-header--nav{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    list-style-type: disc;
-    display: flex;
-    gap: 48px;
-}
-.cd-header--actions{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.cd-modal{
-        --primary-rgb-color: 114,161,255;
-    --primary-bg-color: #09ce40;
-    --primary-hover-bg-color: #578bf2;
-    --primary-active-bg-color: #4e7ddc;
-    --primary-text-color: #fcfcfc;
-    --primary-hover-text-color: #fcfcfc;
-    --primary-active-text-color: #fcfcfc;
-    --secondary-bg-color: #72a1ff26;
-    --secondary-hover-bg-color: #578bf2;
-    --secondary-active-bg-color: #4e7ddc;
-    --secondary-text-color: #72a1ff;
-    --secondary-hover-text-color: #fcfcfc;
-    --secondary-active-text-color: #fcfcfc;
-    --success-bg-color: #0dc268;
-    --success-hover-bg-color: #0dc268;
-    --success-active-bg-color: #0dc268;
-    --success-text-color: #fcfcfc;
-    --success-hover-text-color: #fcfcfc;
-    --success-active-text-color: #fcfcfc;
-    --circles-bg-color: #e4f7e9;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: none;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    z-index: 999;
-}
