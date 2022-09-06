@@ -80,7 +80,8 @@
                             <span class="subtitle">Lorem ipsum dolor sit amet</span>
                             {{ range after 1 .PricingPlans }}
                                {{ range .PaymentScheduleList }}
-                            <div class="price-value">{{ .SubscriptionPeriodCharge }}
+                            <div class="price-value">
+                                {{ .SubscriptionPeriodCharge }}
                                 <span class="currency">$</span>
                                 <span class="month">/year</span>
                             </div>
