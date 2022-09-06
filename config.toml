@@ -4,7 +4,11 @@
   theme = "mytheme"
   relativeURLS = true
 
+  [params]
+        url = "https://purchase-api.dynabic.com/v1.2/products/site-asposeapp/familyName-Aspose.Total?isArchived=false&clientkey=11f3e8f3c7db4393b887&signature=nJcm4W3dAbHTlltkS5FxaIUzJ9k"
+
   [module]
     [[module.mounts]]
       source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       target = "assets/js/bootstrap.bundle.min.js"
+
