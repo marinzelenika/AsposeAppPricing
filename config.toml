@@ -1,4 +1,4 @@
-  BaseURL = "https://www.mywebsite.com/"
+  BaseURL = "https://dynamic-chimera-85eb19.netlify.app/"
   languageCode = "en-us"
   title = "My Hugo Site"
   theme = "mytheme"
