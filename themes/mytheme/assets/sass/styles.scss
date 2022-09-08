@@ -17,7 +17,10 @@
 }
 .nav-pills{
     font-size: large;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
+    //background-color: $primary;
+    padding: 3px;
+    border-radius: 10px;
 }
 .nav-link{
     color: #09ce40 !important;
@@ -25,6 +28,12 @@
 .m-5{
     display: flex;
     justify-content: center;
+    position: relative;
+}
+.save-on-annual{
+    position: absolute;
+    bottom: 0;
+    font-size: small;
 }
 .demo
 {
@@ -48,7 +57,9 @@
     max-height: 600px;
     width: auto;
     border: 2px solid #e3e3e3;
-    text-align: center;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 60px;
@@ -153,9 +164,15 @@
     font-weight: 700;
     color: #7a7e82;
     padding: 9px 30px;
-    position: relative;
+    position: absolute;
+    bottom: 20px;
+    right: 145px;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
 }
 
 .pricingTable .read:hover{
