@@ -1,3 +1,5 @@
 $primary: #e4f7e9;
+$secondary: #09ce40;
+$accordion-button-active-color: shade-color($secondary, 10%);
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "styles.scss";

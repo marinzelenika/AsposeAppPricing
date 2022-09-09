@@ -11,7 +11,7 @@
 
     {{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
- 
+
     <!-- 
         include a favicon for your site if you have it, else omit the line below 
         Location of favicon can be in mytheme/static/favicon.ico
