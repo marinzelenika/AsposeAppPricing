@@ -47,7 +47,7 @@ body {
     border: 2px solid #09ce40;
 }
 .custom-price{
-    @include font-size(2.2rem !important);
+    @include font-size(2.1rem !important);
     padding-top: 30px;
     padding-right: 5px;
     word-break: break-all;
@@ -123,14 +123,14 @@ body {
 }
 
 .pricingTable .price-value{
-    font-size: calc(3em + 0.1vw);//@include font-size(4rem !important);//font-size: 72px;
+    font-size: calc(3rem + 0.1vw);//@include font-size(4rem !important);//font-size: 72px;
     font-weight: 600;
     margin-top: 10px;
     position: relative;
     display: inline-block;
 }
 .pricingTable .currency{
-    @include font-size(2.8rem !important); // font-size: 45px;
+    @include font-size(2.5rem !important); // font-size: 45px;
     font-weight: normal;
     position: absolute;
     top: 2px;
