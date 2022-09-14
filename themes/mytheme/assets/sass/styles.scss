@@ -243,6 +243,13 @@ body {
     @include font-size(2rem !important);
     font-weight: 600;
     margin: 0 0 5px 0;
+    @include padding(1rem 0);
+    }
+    .pricingTable .pricingTable-header{
+        @include padding(2rem 0);
+    }
+    .pricingTable .price-value{
+        @include font-size(5rem !important);
     }
 }
 
