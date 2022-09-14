@@ -1,0 +1,53 @@
+{{ $options := dict "method" "GET" }} {{ with resources.GetRemote
+$.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
+.Content }} {{ with transform.Unmarshal . }}
+
+<div class="row text-center justify-content-center">
+    {{ range first 1 . }}
+  <div class="col">
+    <div class="card border-secondary mb-3 pricingTable">
+      <div class="card-header">
+        <h3 class="heading display-4">{{ .Name }}</h3>
+        <span class="currency1">$</span>
+        <h4 class="display-5">
+            {{ range first 1 .PricingPlans }} {{ range .PaymentScheduleList }}
+           {{ .SubscriptionPeriodCharge }} 
+        </h4>
+        <span class="month1">/mo</span>
+      </div>
+      {{ end }}{{ end }}{{ end }}
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-secondary mb-3 pricingTable">
+      <div class="card-header">Header</div>
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-secondary mb-3 pricingTable">
+      <div class="card-header">Header</div>
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}{{ end }}{{ end }}{{ end }}

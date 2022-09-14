@@ -1,3 +1,6 @@
+body {
+    font-family: 'Inter' !important;
+}
 .jumbotron {
     padding: 2rem 2rem;
 }
@@ -44,9 +47,10 @@
     border: 2px solid #09ce40;
 }
 .custom-price{
-    font-size: 40px;
+    @include font-size(2.2rem !important);
     padding-top: 30px;
     padding-right: 5px;
+    word-break: break-all;
 }
 
 .pricingTable{
@@ -54,7 +58,6 @@
     max-height: 600px;
     width: auto;
     border: 2px solid #e3e3e3;
-    //border-radius: 6px;
     text-align: center;
     position: relative;
     padding-bottom: 40px;
@@ -75,13 +78,11 @@
     right: -2px;
     z-index: -1;
     transition: all 0.5s ease 0s;
-    //border-radius: 6px;
 }
 
 .pricingTable:before{
     border-right: 2px solid #09ce40;
     border-left: 2px solid #09ce40;
-    //border-radius: 6px;
     transform: scaleY(0);
     transform-origin: 100% 0 0;
 }
@@ -89,7 +90,6 @@
 .pricingTable:after{
     border-bottom: 2px solid #09ce40;
     border-top: 2px solid #09ce40;
-    //border-radius: 6px;
     transform: scaleX(0);
     transform-origin: 0 100% 0;
 }
@@ -108,31 +108,29 @@
     background: $primary;
     color: black;
     margin: -2px -2px 35px;
-    padding: 40px 0;
-    //border-radius: 6px 6px 0px 0px;
+    @include padding(2.5rem 0);
 }
 
 .pricingTable .heading{
-    font-size: 30px;
+    @include font-size(2rem !important);
     font-weight: 600;
     margin: 0 0 5px 0;
 }
 
 .pricingTable .subtitle{
-    font-size: 14px;
+    font-size: 0.9rem;//font-size: 14px;
     display: block;
 }
 
 .pricingTable .price-value{
-    font-size: 72px;
+    @include font-size(4rem !important);//font-size: 72px;
     font-weight: 600;
     margin-top: 10px;
     position: relative;
     display: inline-block;
 }
-
 .pricingTable .currency{
-    font-size: 45px;
+    @include font-size(2.8rem !important); // font-size: 45px;
     font-weight: normal;
     position: absolute;
     top: 2px;
@@ -140,7 +138,7 @@
 }
 
 .pricingTable .month{
-    font-size: 20px;
+    @include font-size(1.25rem !important);//  font-size: 20px;
     position: absolute;
     bottom: 17px;
     right: -40px;
@@ -154,21 +152,21 @@
 }
 
 .pricingTable .pricing-content li{
-    font-size: 16px;
+    font-size: calc(1rem * 0.1vw);
     color: #7a7e82;
     line-height: 40px;
 }
 
 .btn-secondary{
-    font-size: 18px;
+    @include font-size(1.2rem !important);
     font-weight: 700;
     color: white;
     bottom: 15px;
     position:absolute;
     left: 0;
     right: 0;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
     transition: all 0.3s ease 0s;
     border-radius: 20px;
     box-shadow: 5px 6px 7px 0px rgba(212,212,212,0.89);
@@ -180,18 +178,6 @@
     border-color: #09ce40;
     color: #09ce40;
 }
-
-
-@media screen and (max-width: 990px){
-    .pricingTable
-    { 
-        margin-bottom: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
-}
-
 .accordion-item{
     margin: 20px;
     box-shadow: 8px 6px 11px 0px rgba(212,212,212,0.89);
@@ -219,4 +205,43 @@
     box-shadow: 5px 6px 7px 0px rgba(212,212,212,0.89);
     -webkit-box-shadow: 8px 6px 11px 0px rgba(212,212,212,0.89);
     -moz-box-shadow: 8px 6px 11px 0px rgba(212,212,212,0.89);
+}
+
+@media screen and (max-width: 990px){
+    .pricingTable
+    { 
+        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .pricingTable .pricing-content li{
+        font-size: 0.6rem !important;
+    }
+    .btn-secondary{
+        font-size: 0.9rem !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .custom-price{
+        font-size: 1.3rem !important;
+    }
+    .pricingTable .heading{
+    @include font-size(1.5rem !important);
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+    
+}
+@media screen and (max-width: 768px){
+    .pricingTable .pricing-content li{
+        font-size: 1rem !important;
+    }
+    .custom-price{
+        font-size: 1.8rem !important;
+    }
+    .pricingTable .heading{
+    @include font-size(2rem !important);
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
 }

@@ -11,6 +11,7 @@
 
     {{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
     <!-- 
         include a favicon for your site if you have it, else omit the line below 

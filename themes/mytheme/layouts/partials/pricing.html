@@ -20,13 +20,14 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
     <div class="row my-2">
       {{ range first 1 . }}
       <div class="col-md-4 col-sm-6">
-        <div class="pricingTable">
+        <div class="pricingTable card">
           <div class="pricingTable-header border-image-clip-path">
-            <h3 class="heading">{{ .Name }}</h3>
+            <h3 class="heading display-4">{{ .Name }}</h3>
             <span class="subtitle">Free plan.</span>
             {{ range first 1 .PricingPlans }} {{ range .PaymentScheduleList }}
             <div class="price-value">
               {{ .SubscriptionPeriodCharge }}
+              
               <span class="currency">$</span>
               <span class="month">/mo</span>
             </div>
@@ -203,7 +204,7 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
             <div class="price-value">
               <p class="custom-price">Custom price</p>
               <span class="currency"></span>
-              <span class="month">/mo</span>
+              
             </div>
           </div>
           <ul class="pricing-content">
@@ -262,7 +263,7 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
             <div class="price-value">
               {{ .SubscriptionPeriodCharge }}
               <span class="currency">$</span>
-              <span class="month">/year</span>
+              <span class="month">/yr</span>
             </div>
             {{ end }} {{ end }} {{ end }}
           </div>
@@ -365,7 +366,7 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
             <div class="price-value">
               {{ .SubscriptionPeriodCharge }}
               <span class="currency">$</span>
-              <span class="month">/year</span>
+              <span class="month">/yr</span>
             </div>
             {{ end }} {{ end }}
           </div>
@@ -437,7 +438,7 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
             <div class="price-value">
               <p class="custom-price">Custom price</p>
               <span class="currency"></span>
-              <span class="month">/year</span>
+              
             </div>
           </div>
           <ul class="pricing-content">
