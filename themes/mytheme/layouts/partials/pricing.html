@@ -361,7 +361,7 @@ $.Site.Params.url }} {{ with .Err }} {{ warnf "%s" . }} {{ else }} {{ with
         <div class="pricingTable">
           <div class="pricingTable-header border-image-clip-path">
             <h3 class="heading">{{ .Name }}</h3>
-            <span class="subtitle">Billed monthly per user.</span>
+            <span class="subtitle">Billed annually as one payment.</span>
             {{ range after 1 .PricingPlans }} {{ range .PaymentScheduleList }}
             <div class="price-value">
               {{ .SubscriptionPeriodCharge }}
